@@ -23,7 +23,7 @@ jobs:
         with:
           images: inclunet/accessbot
       - name: What
-        run: pwd & ls -la & cd cmd && ls && cm accessbot & ls
+        run: pwd & ls -la & cd cmd && ls && cd accessbot & ls
       - name: Build and push Docker image
         uses: docker/build-push-action@v4
         with:
